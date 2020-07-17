@@ -1,0 +1,7 @@
+Flask
+flask-login
+dash
+dash-auth
+dash-bootstrap-components
+gunicorn
+pandas

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %} "Flask Home" {% endblock %}
+
+{%block content %}
+
+	
+	<div class="container-fluid">  
+	  <div class="row">
+		<div class="col-md">
+			<div class="card p-1 mt-5" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/image.png')}}" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Dash app 1</h5>
+			    <p class="card-text">Some flavour... </p>
+			    <form method="get" action="{{url_for('render_dashboard1')}}">
+				<button class="btn btn-primary btn-block my-4">launch app</button>
+			</form>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md">
+			<div class="card p-1 mt-5" style="width: 18rem;">
+			  <img src="{{url_for('static', filename='images/universita-cattolica-logo.png')}}" class="card-img-top" alt="...">
+			  <div class="card-body">
+			    <h5 class="card-title">Dash app 2</h5>
+			    <p class="card-text">Some flavour...</p>
+			    <form method="get" action="{{url_for('render_dashboard2')}}">
+				<button class="btn btn-primary btn-block my-4">launch app</button>
+			</form>
+			  </div>
+			</div>
+		</div> 
+		<div class="col-md"></div>
+	  </div> 
+	</div>
+	
+{% endblock %}
