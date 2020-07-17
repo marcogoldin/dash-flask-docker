@@ -16,3 +16,5 @@ You can proxy a local port to your public ip, although it's not recommended in p
 Follow step-by-step this awesome guide to proxy your container to your domain with Nginx webserver:
 [Host docker container with Nginx](https://www.digitalocean.com/community/questions/how-to-host-multiple-docker-containers-on-a-single-droplet-with-nginx-reverse-proxy)
 
+### 5. requirements.txt
+If needed, add your extra python packages in the requirement.txt before building the image.
