@@ -7,7 +7,7 @@ build your image with:
 
 ### 2. Edit flask_app.py according to your needs
 
-### 3. Launh stack with docker-compose 
+### 3. Launch stack with docker-compose 
 ```docker-compose up -d```
 
 ### 4. Nginx
