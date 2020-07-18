@@ -49,7 +49,7 @@ class User(UserMixin):
         return "%d/%s/%s" % (self.id, self.name, self.password)
 
 
-# quick user creation, if needed you can implement a more robust approach
+# quick user creation, you can implement a more robust approach
 users = [User("user1@domain.com"),User("user2@domain.com"),User("user3@domain.com")]
 
 # route to login
@@ -77,7 +77,7 @@ def logout():
     return redirect(url_for("login"))
 
 
-# handle a failed login with cutom logics and template
+# handle a failed login with custom logics and template
 @server.errorhandler(401)
 def page_not_found(e):
     return Response('<p>Login failed</p>')
